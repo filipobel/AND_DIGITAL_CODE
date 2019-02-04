@@ -36,6 +36,7 @@
 </head>
 
 <body>
+<script src="js/filterCandidates.js"></script>
   <div id="container">
     <h2> Demo Table Of Candidates <h2>
     <table class="candidates" id="candidates_example">
@@ -58,11 +59,25 @@
         <td>.NET, Azure</td>
       </tr>
     </table>
-    <h2> Candidates (Currently Unfiltered) <h2>
+    <h2> 
+		<form>
+			<select id=skillFilter onchange="changeOfSkill(value)">
+			<option value = "All"> All </option>
+			<option value="JavaScript"> JavaScript </option>
+			<option value="Docker"> Docker </option>
+			<option value="Ruby"> Ruby </option>
+			<option value="Python"> Python </option>
+			<option value="AWS"> AWS </option>
+			<option value="Azure"> Azure </option>
+			<option value="Java"> Java </option>
+			<option value="PHP"> PHP </option>
+			<option value=".Net"> .Net </option>
+			</select>
+			Candidates
+		</form>
+	<h2>
   </div>
 
-
-  <script src="js/filterCandidates.js"></script>
 </body>
 
 </html>
